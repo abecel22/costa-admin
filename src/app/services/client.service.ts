@@ -9,7 +9,8 @@ import { Client } from '../models/Client';
 })
 export class ClientService {
   // tslint:disable-next-line:no-inferrable-types
-  randomUserUrl: string = 'https://randomuser.me/api/?results=6';
+  randomUserUrl: string =
+    'https://randomuser.me/api/?results=8&nat=us&inc=name,location,email,registered,phone,picture&noinfo';
   constructor(private http: HttpClient) {}
 
   getClients(): Observable<Client[]> {

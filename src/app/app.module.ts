@@ -13,6 +13,8 @@ import {
   MatIconModule,
   MatListModule
 } from '@angular/material';
+import { MatCardModule } from '@angular/material/card';
+
 import { ClientsComponent } from './components/clients/clients.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
@@ -43,7 +45,8 @@ import { ReportsComponent } from './components/reports/reports.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

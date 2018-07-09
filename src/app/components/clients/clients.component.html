@@ -1,3 +1,13 @@
-<p>
-  clients works!
-</p>
+<!-- <ul>
+  <li *ngFor="let client of clients">
+    <span>{{ client.name.first}} {{client.name.last}}</span>
+  </li>
+</ul> -->
+
+<mat-card *ngFor="let client of clients" class="client-card">
+  <mat-card-header>
+    <mat-card-title>{{client.name.first}} {{client.name.last}}</mat-card-title>
+    <mat-card-subtitle>{{client.email}}</mat-card-subtitle>
+    <img mat-card-image src={{client.picture.thumbnail}} alt="" />
+  </mat-card-header>
+</mat-card>

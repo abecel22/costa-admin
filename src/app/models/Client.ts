@@ -1,13 +1,20 @@
 export interface Client {
-  first: string;
-  last: string;
   email: string;
-  phone: string;
-  registered: string;
-  address: {
+  location: {
     street: string;
     city: string;
     state: string;
     zipCode: string;
   };
+  name: {
+    first: string;
+    last: string;
+  };
+  phone: string;
+  picture: {
+    large: string;
+    small: string;
+    thumbnail: string;
+  };
+  registered: string;
 }

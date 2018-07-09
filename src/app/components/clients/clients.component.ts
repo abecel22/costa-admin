@@ -8,10 +8,13 @@ import { Client } from '../../models/Client';
   styleUrls: ['./clients.component.css']
 })
 export class ClientsComponent implements OnInit {
-  clients: Client[];
+  clients: Client[] = [];
   constructor(private clientService: ClientService) {}
 
   ngOnInit() {
-    this.clientService.getClients().subscribe((data) => console.log(data));
+    this.clientService.getClients().subscribe((client: any) => {
+      this.clients = client.results;
+      console.log(this.clients);
+    });
   }
 }
