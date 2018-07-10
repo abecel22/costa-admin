@@ -1,13 +1,18 @@
-<!-- <ul>
-  <li *ngFor="let client of clients">
-    <span>{{ client.name.first}} {{client.name.last}}</span>
-  </li>
-</ul> -->
-
-<mat-card *ngFor="let client of clients" class="client-card">
-  <mat-card-header>
-    <mat-card-title>{{client.name.first}} {{client.name.last}}</mat-card-title>
-    <mat-card-subtitle>{{client.email}}</mat-card-subtitle>
-    <img mat-card-image src={{client.picture.thumbnail}} alt="" />
-  </mat-card-header>
-</mat-card>
+<div class="container">
+  <h1 class="page-title">Client List</h1>
+  <mat-grid-list cols="2" rowHeight="200px">
+    <mat-grid-tile *ngFor="let client of clients">
+      <mat-card class="client-card">
+        <mat-card-header>
+          <mat-card-title>{{client.name.first}} {{client.name.last}}</mat-card-title>
+          <mat-card-subtitle>{{client.phone}}</mat-card-subtitle>
+          <img mat-card-avatar src={{client.picture.thumbnail}} alt="" />
+        </mat-card-header>
+        <mat-card-content>
+          <p>Email: {{client.email}}</p>
+          <p>Address: {{client.location.street}}</p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

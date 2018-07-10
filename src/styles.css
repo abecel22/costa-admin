@@ -9,3 +9,13 @@ body {
 body {
   margin: 0;
 }
+
+.container {
+  margin: 2% 10%;
+}
+
+.page-title {
+  color: #3d3b3b;
+  text-align: center;
+  margin-bottom: 4%;
+}

@@ -1,8 +1,4 @@
 .client-card {
-  max-width: 400px;
-}
-
-img {
-  width: 50px;
-  border-radius: 50%;
+  width: 300px;
+  z-index: -1;
 }

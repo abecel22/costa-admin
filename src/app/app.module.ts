@@ -14,6 +14,7 @@ import {
   MatListModule
 } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { ClientsComponent } from './components/clients/clients.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -46,7 +47,8 @@ import { ReportsComponent } from './components/reports/reports.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
