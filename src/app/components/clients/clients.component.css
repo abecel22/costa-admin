@@ -1,4 +1,8 @@
 .client-card {
   width: 300px;
+  padding: 5% 8%;
   z-index: -1;
+}
+.push {
+  padding-left: 60px;
 }

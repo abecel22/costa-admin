@@ -4,7 +4,7 @@ export interface Client {
     street: string;
     city: string;
     state: string;
-    zipCode: string;
+    postcode: string;
   };
   name: {
     first: string;
@@ -16,5 +16,7 @@ export interface Client {
     small: string;
     thumbnail: string;
   };
-  registered: string;
+  registered: {
+    date: string;
+  };
 }
