@@ -1,3 +1,29 @@
-<p>
-  calculator works!
-</p>
+<div class="container">
+  <h1 class="container-title">Mortgage Calculator</h1>
+  <form class="calculator" [formGroup]="calcForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="calculator_full-width">
+      <input matInput placeholder="Loan Amount" type="number" id="loanAmount" formControlName="loanAmount">
+    </mat-form-field>
+
+    <mat-form-field class="calculator_full-width">
+      <input matInput placeholder="Interest Rate (%)" type="number" id="interestRate" formControlName="interestRate">
+    </mat-form-field>
+
+    <mat-form-field class="calculator_full-width">
+      <mat-select placeholder="Mortgage Period (Years)" id="morgPeriod" formControlName="morgPeriod">
+        <mat-option value="10">10</mat-option>
+        <mat-option value="15">15</mat-option>
+        <mat-option value="20">20</mat-option>
+        <mat-option value="25">25</mat-option>
+        <mat-option value="30">30</mat-option>
+        <mat-option value="40">40</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button type="submit">submit</button>
+  </form>
+  <mat-list>
+    <mat-list-item>Total Principal and Interest: </mat-list-item>
+    <mat-list-item>Monthly Payments: </mat-list-item>
+  </mat-list>
+
+</div>
