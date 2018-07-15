@@ -19,6 +19,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { ClientsComponent } from './components/clients/clients.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -57,7 +58,8 @@ import { ReportsComponent } from './components/reports/reports.component';
     MatGridListModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

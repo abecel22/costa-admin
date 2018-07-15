@@ -12,13 +12,17 @@ export class CalculatorComponent implements OnInit {
   calcForm: FormGroup;
   loanAmount: number;
   interestRate: number;
+  numPayments: number;
+  monthlyPayment: number = 1418;
+  totalPaid: number = 510640;
   constructor() {}
 
   ngOnInit() {
     this.calcForm = new FormGroup({
-      loanAmount: new FormControl('30000'),
+      loanAmount: new FormControl('300000'),
       interestRate: new FormControl('3.92'),
-      morgPeriod: new FormControl('20')
+      morgPeriod: new FormControl('30'),
+      monthlyPayment: new FormControl('1418')
     });
 
     this.calcForm.valueChanges.subscribe((value) => this.onSubmit());
@@ -26,7 +30,19 @@ export class CalculatorComponent implements OnInit {
 
   onSubmit() {
     this.loanAmount = this.calcForm.value.loanAmount;
-    this.interestRate = this.calcForm.value.interestRate;
-    console.log(this.loanAmount * this.interestRate);
+    this.interestRate = this.calcForm.value.interestRate / 100 / 12;
+    this.numPayments = this.calcForm.value.morgPeriod * 12;
+    this.monthlyPayment = Math.round(
+      this.loanAmount *
+        ((this.interestRate * (1 + this.interestRate) ** this.numPayments) /
+          ((1 + this.interestRate) ** this.numPayments - 1))
+    );
+    this.totalPaid = Math.round(
+      this.loanAmount *
+        ((this.interestRate * (1 + this.interestRate) ** this.numPayments) /
+          ((1 + this.interestRate) ** this.numPayments - 1)) *
+        this.numPayments
+    );
+    console.log(this.monthlyPayment);
   }
 }
