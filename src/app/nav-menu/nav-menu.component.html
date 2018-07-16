@@ -2,14 +2,22 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
     <mat-toolbar color="accent">
+      <mat-icon class="icon-menu">account_circle</mat-icon>
+      <span>Abel Acosta</span>
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/">Dashboard</a>
-      <a mat-list-item routerLink="/email">Email</a>
-      <a mat-list-item routerLink="/clients">Clients</a>
-      <a mat-list-item routerLink="/locations">Locations</a>
-      <a mat-list-item routerLink="/calculator">Mortgage Calculator</a>
-      <a mat-list-item routerLink="/reports">Reports</a>
+      <a mat-list-item routerLink="/">
+        <mat-icon class="icon-menu">dashboard</mat-icon>Dashboard</a>
+      <a mat-list-item routerLink="/email">
+        <mat-icon class="icon-menu">mail</mat-icon>Email</a>
+      <a mat-list-item routerLink="/clients">
+        <mat-icon class="icon-menu">contacts</mat-icon>Clients</a>
+      <a mat-list-item routerLink="/locations">
+        <mat-icon class="icon-menu">place</mat-icon>Locations</a>
+      <a mat-list-item routerLink="/calculator">
+        <mat-icon class="icon-menu">attach_money</mat-icon>Mortgage Calculator</a>
+      <a mat-list-item routerLink="/reports">
+        <mat-icon class="icon-menu">trending_up</mat-icon>Reports</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -17,7 +25,11 @@
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
+      <mat-icon class="icon-world">public</mat-icon>
       <span>Costa Financial</span>
+      <span class="spacer"></span>
+      <mat-icon class="icon">notifications</mat-icon>
+      <mat-icon class="icon">mail</mat-icon>
     </mat-toolbar>
     <!-- Content goes here -->
     <router-outlet></router-outlet>

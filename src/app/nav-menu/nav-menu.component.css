@@ -3,7 +3,7 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 250px;
   background: #424242;
   color: white;
 }
@@ -15,4 +15,24 @@
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
+}
+
+.mat-toolbar {
+  color: white;
+}
+
+.icon {
+  padding-left: 10px;
+}
+
+.icon-world {
+  padding: 0 5px 0 20px;
+}
+
+.icon-menu {
+  padding: 0 10px 0 0;
+}
+
+.spacer {
+  flex: 1 1 auto;
 }
