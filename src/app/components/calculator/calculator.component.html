@@ -22,26 +22,25 @@
             <mat-option value="40">40</mat-option>
           </mat-select>
         </mat-form-field>
-        <button type="submit">submit</button>
       </form>
       <mat-list>
-        <mat-list-item>Monthly Payments: $ {{ this.monthlyPayment }}</mat-list-item>
-        <mat-list-item>Total Principal and Interest: $ {{ this.totalPaid }} </mat-list-item>
+        <mat-list-item>Monthly Payments: {{ this.monthlyPayment | currency:'USD':"$ ": "1.0" }}</mat-list-item>
+        <mat-list-item>Total Principal and Interest: {{ this.totalPaid | currency:'USD':"$ ": "1.0" }} </mat-list-item>
       </mat-list>
     </mat-tab>
     <mat-tab label="Max Loan">
       <h1 class="container-title">Max Loan Amount</h1>
-      <form class="calculator" [formGroup]="calcForm" (ngSubmit)="onSubmit()">
+      <form class="calculator" [formGroup]="calcForm2" (ngSubmit)="onSubmit2()">
         <mat-form-field class="calculator_full-width">
-          <input matInput placeholder="Monthly Payment" type="number" id="monthlyPayment" formControlName="monthlyPayment">
+          <input matInput placeholder="Monthly Payment" type="number" id="maxPayment" formControlName="maxPayment">
         </mat-form-field>
 
         <mat-form-field class="calculator_full-width">
-          <input matInput placeholder="Interest Rate (%)" type="number" id="interestRate" formControlName="interestRate">
+          <input matInput placeholder="Interest Rate (%)" type="number" id="interestRate2" formControlName="interestRate2">
         </mat-form-field>
 
         <mat-form-field class="calculator_full-width">
-          <mat-select placeholder="Mortgage Period (Years)" id="morgPeriod" formControlName="morgPeriod">
+          <mat-select placeholder="Mortgage Period (Years)" id="morgPeriod2" formControlName="morgPeriod2">
             <mat-option value="10">10</mat-option>
             <mat-option value="15">15</mat-option>
             <mat-option value="20">20</mat-option>
@@ -50,11 +49,9 @@
             <mat-option value="40">40</mat-option>
           </mat-select>
         </mat-form-field>
-        <button type="submit">submit</button>
       </form>
       <mat-list>
-        <mat-list-item>Monthly Payments: $ {{ this.monthlyPayment }}</mat-list-item>
-        <mat-list-item>Total Principal and Interest: $ {{ this.totalPaid }} </mat-list-item>
+        <mat-list-item>Max amount to borrow: {{ this.maxLoan | currency:'USD':"$ ": "1.0"}}</mat-list-item>
       </mat-list>
     </mat-tab>
   </mat-tab-group>
