@@ -29,6 +29,10 @@ import { EmailComponent } from './components/email/email.component';
 import { LocationsComponent } from './components/locations/locations.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { ReportsComponent } from './components/reports/reports.component';
+import { LineGraphComponent } from './components/reports/line-graph/line-graph.component';
+import { BarGraphComponent } from './components/reports/bar-graph/bar-graph.component';
+import { DoughnutGraphComponent } from './components/reports/doughnut-graph/doughnut-graph.component';
+import { PolarGraphComponent } from './components/reports/polar-graph/polar-graph.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,11 @@ import { ReportsComponent } from './components/reports/reports.component';
     EmailComponent,
     LocationsComponent,
     CalculatorComponent,
-    ReportsComponent
+    ReportsComponent,
+    LineGraphComponent,
+    BarGraphComponent,
+    DoughnutGraphComponent,
+    PolarGraphComponent
   ],
   imports: [
     BrowserModule,
