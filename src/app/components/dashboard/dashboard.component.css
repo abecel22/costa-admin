@@ -1,4 +1,72 @@
-img {
-  display: block;
-  margin: auto;
+.status-card_left {
+  color: white;
+  padding: 2px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
+
+.status-card_right {
+  color: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.status-card_number {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.mat-divider {
+  width: 30%;
+  margin: 0 auto;
+  background: white;
+}
+
+.status-card_text {
+  margin-bottom: 10px;
+}
+
+mat-icon {
+  font-size: 2em;
+  margin: 10px auto;
+}
+
+img {
+  width: 100%;
+}
+
+.long img {
+  height: 50%;
+}
+.grid-container {
+  margin-top: 1%;
+}
+
+.banking-left {
+  background-color: #42a5f5;
+}
+
+.banking-right {
+  background-color: #2196f3;
+}
+
+.leads-left {
+  background-color: #ff7043;
+}
+
+.leads-right {
+  background-color: #ff5722;
+}
+
+.assets-left {
+  background-color: #5c6bc0;
+}
+
+.assets-right {
+  background-color: #3f51b5;
+}
+
+/* 
+.weather {
+  background-image: url('https://farm4.staticflickr.com/3688/11152034796_1cca36c998.jpg');
+  box-shadow: inset 0 0 0 2000px rgba(220, 200, 200, 0.2);
+  color: white;
+} */

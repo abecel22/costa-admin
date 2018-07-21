@@ -16,6 +16,7 @@ body {
 
 .container {
   margin: 2% 10%;
+  z-index: -1;
 }
 
 .container-title {

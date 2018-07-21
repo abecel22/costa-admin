@@ -20,6 +20,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDividerModule } from '@angular/material/divider';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { ClientsComponent } from './components/clients/clients.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -67,7 +70,9 @@ import { PolarGraphComponent } from './components/reports/polar-graph/polar-grap
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatTabsModule
+    MatTabsModule,
+    FlexLayoutModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

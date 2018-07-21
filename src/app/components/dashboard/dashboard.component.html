@@ -1,4 +1,66 @@
 <div class="container">
   <h1 class="container-title">Employee Dashboard</h1>
-  <img src="https://farm3.staticflickr.com/2127/2426647098_262078d6a4.jpg" alt="">
+  <div class="grid-container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="1%" fxLayoutAlign="center">
+    <div class="grid-container-item" fxFlex="33%">
+      <div class="status-card" fxLayout="row">
+        <div class="status-card_left banking-left" fxLayout="column" fxFlex="60%">
+          <span class="status-card_number" fxLayoutAlign="center center">1231</span>
+          <mat-divider></mat-divider>
+          <span class="status-card_text" fxLayoutAlign="center center">Banking</span>
+        </div>
+        <div class="status-card_right banking-right" fxFlex="40%" fxLayoutAlign="center center">
+          <mat-icon>account_balance</mat-icon>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container-item" fxFlex="33%">
+      <div class="status-card" fxLayout="row">
+        <div class="status-card_left leads-left" fxLayout="column" fxFlex="60%">
+          <span class="status-card_number" fxLayoutAlign="center center">1292</span>
+          <mat-divider></mat-divider>
+          <span class="status-card_text" fxLayoutAlign="center center">Leads</span>
+        </div>
+        <div class="status-card_right leads-right" fxFlex="40%" fxLayoutAlign="center center">
+          <mat-icon>people</mat-icon>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container-item" fxFlex="33%">
+      <div class="status-card" fxLayout="row">
+        <div class="status-card_left assets-left" fxLayout="column" fxFlex="60%">
+          <span class="status-card_number" fxLayoutAlign="center center">1781</span>
+          <mat-divider></mat-divider>
+          <span class="status-card_text" fxLayoutAlign="center center">Assets</span>
+        </div>
+        <div class="status-card_right assets-right" fxFlex="40%" fxLayoutAlign="center center">
+          <mat-icon>location_city</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid-container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="center">
+    <div class="grid-container-item" fxFlex="32.9%">
+      <img src="https://farm2.staticflickr.com/1619/24162602486_2f81274a8b.jpg" alt="">
+    </div>
+    <div class="grid-container-item long" fxFlex="66%">
+      <img src="https://farm2.staticflickr.com/1619/24162602486_2f81274a8b.jpg" alt="">
+    </div>
+  </div>
 </div>
+
+<!-- 
+<mat-grid-list [cols]="breakpoint" rowHeight="10rem" (window:resize)="onResize($event)">
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile class="weather">
+      <mat-icon class="weather-item">wb_sunny</mat-icon>
+      <span class="weather-item">Houston,TX</span>
+      <span class="weather-item">78</span>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+  </mat-grid-list> -->
