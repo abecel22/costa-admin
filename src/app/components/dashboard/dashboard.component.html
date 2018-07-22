@@ -1,12 +1,14 @@
 <div class="container">
   <h1 class="container-title">Employee Dashboard</h1>
-  <div class="grid-container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="1%" fxLayoutAlign="center">
+  <div class="grid-container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="1%" fxLayoutGap.xs="6%" fxLayoutAlign="center">
     <div class="grid-container-item" fxFlex="33%">
       <div class="status-card" fxLayout="row">
-        <div class="status-card_left banking-left" fxLayout="column" fxFlex="60%">
-          <span class="status-card_number" fxLayoutAlign="center center">1231</span>
+        <div class="status-card_left banking-left" fxLayoutAlign="center center" fxLayout="column" fxFlex="60%">
+          <span class="status-card_number">
+            <ng2-odometer [number]="number.banking" [config]="{ }"></ng2-odometer>
+          </span>
           <mat-divider></mat-divider>
-          <span class="status-card_text" fxLayoutAlign="center center">Banking</span>
+          <span class="status-card_text">Banking</span>
         </div>
         <div class="status-card_right banking-right" fxFlex="40%" fxLayoutAlign="center center">
           <mat-icon>account_balance</mat-icon>
@@ -15,10 +17,12 @@
     </div>
     <div class="grid-container-item" fxFlex="33%">
       <div class="status-card" fxLayout="row">
-        <div class="status-card_left leads-left" fxLayout="column" fxFlex="60%">
-          <span class="status-card_number" fxLayoutAlign="center center">1292</span>
+        <div class="status-card_left leads-left" fxLayoutAlign="center center" fxLayout="column" fxFlex="60%">
+          <span class="status-card_number">
+            <ng2-odometer [number]="number.leads" [config]="{ }"></ng2-odometer>
+          </span>
           <mat-divider></mat-divider>
-          <span class="status-card_text" fxLayoutAlign="center center">Leads</span>
+          <span class="status-card_text">Leads</span>
         </div>
         <div class="status-card_right leads-right" fxFlex="40%" fxLayoutAlign="center center">
           <mat-icon>people</mat-icon>
@@ -27,10 +31,12 @@
     </div>
     <div class="grid-container-item" fxFlex="33%">
       <div class="status-card" fxLayout="row">
-        <div class="status-card_left assets-left" fxLayout="column" fxFlex="60%">
-          <span class="status-card_number" fxLayoutAlign="center center">1781</span>
+        <div class="status-card_left assets-left" fxLayoutAlign="center center" fxLayout="column" fxFlex="60%">
+          <span class="status-card_number">
+            <ng2-odometer [number]="number.assets" [config]="{ }"></ng2-odometer>
+          </span>
           <mat-divider></mat-divider>
-          <span class="status-card_text" fxLayoutAlign="center center">Assets</span>
+          <span class="status-card_text">Assets</span>
         </div>
         <div class="status-card_right assets-right" fxFlex="40%" fxLayoutAlign="center center">
           <mat-icon>location_city</mat-icon>
@@ -38,12 +44,15 @@
       </div>
     </div>
   </div>
-  <div class="grid-container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="center">
-    <div class="grid-container-item" fxFlex="32.9%">
-      <img src="https://farm2.staticflickr.com/1619/24162602486_2f81274a8b.jpg" alt="">
+  <div class="grid-container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutGap.xs="4%" fxLayoutAlign="center">
+    <div class="grid-container-item weather" fxLayout="column" fxFlex="32.9%" fxLayoutAlign="center center">
+      <mat-icon>wb_sunny</mat-icon>
+      <span class="weather-item">78°</span>
+      <span class="weather-item">Houston</span>
+
     </div>
     <div class="grid-container-item long" fxFlex="66%">
-      <img src="https://farm2.staticflickr.com/1619/24162602486_2f81274a8b.jpg" alt="">
+      <app-dashline-graph></app-dashline-graph>
     </div>
   </div>
 </div>

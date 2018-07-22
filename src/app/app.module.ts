@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { Ng2OdometerModule } from 'ng2-odometer';
 import {
   MatToolbarModule,
   MatButtonModule,
@@ -36,6 +37,7 @@ import { LineGraphComponent } from './components/reports/line-graph/line-graph.c
 import { BarGraphComponent } from './components/reports/bar-graph/bar-graph.component';
 import { DoughnutGraphComponent } from './components/reports/doughnut-graph/doughnut-graph.component';
 import { PolarGraphComponent } from './components/reports/polar-graph/polar-graph.component';
+import { DashlineGraphComponent } from './components/dashboard/dashline-graph/dashline-graph.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,8 @@ import { PolarGraphComponent } from './components/reports/polar-graph/polar-grap
     LineGraphComponent,
     BarGraphComponent,
     DoughnutGraphComponent,
-    PolarGraphComponent
+    PolarGraphComponent,
+    DashlineGraphComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +75,8 @@ import { PolarGraphComponent } from './components/reports/polar-graph/polar-grap
     MatSelectModule,
     MatTabsModule,
     FlexLayoutModule,
-    MatDividerModule
+    MatDividerModule,
+    Ng2OdometerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

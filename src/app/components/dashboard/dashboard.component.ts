@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  number: any = {
+    banking: 1291,
+    leads: 1383,
+    assets: 3684
+  };
   constructor() {}
 
   ngOnInit() {}

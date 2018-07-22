@@ -1,3 +1,7 @@
+.status-card {
+  min-height: 130px;
+}
+
 .status-card_left {
   color: white;
   padding: 2px;
@@ -25,19 +29,22 @@
 }
 
 mat-icon {
-  font-size: 2em;
-  margin: 10px auto;
+  font-size: 3.5em;
+  margin: 0 17% 15% 0;
+}
+
+.long {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  padding: 7px;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.2);
 }
 
 img {
   width: 100%;
 }
 
-.long img {
-  height: 50%;
-}
 .grid-container {
-  margin-top: 1%;
+  margin-top: 3%;
 }
 
 .banking-left {
@@ -64,9 +71,15 @@ img {
   background-color: #3f51b5;
 }
 
-/* 
 .weather {
-  background-image: url('https://farm4.staticflickr.com/3688/11152034796_1cca36c998.jpg');
-  box-shadow: inset 0 0 0 2000px rgba(220, 200, 200, 0.2);
+  background-image: url('https://farm4.staticflickr.com/3024/3041327437_50687f07c9.jpg');
   color: white;
-} */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.weather-item {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+}
