@@ -1,9 +1,24 @@
 .calculator {
   min-width: 150px;
-  max-width: 500px;
+  max-width: 450px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .calculator_full-width {
   width: 100%;
+}
+
+mat-tab-group {
+  margin: 0 auto;
+  min-width: 150px;
+  max-width: 90%;
+  width: 100%;
+}
+
+.results-div {
+  min-width: 150px;
+  max-width: 450px;
+  width: 100%;
+  margin: 7% auto;
 }

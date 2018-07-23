@@ -1,8 +1,35 @@
 <div class="container">
-  <h1 class="container-title">Locations</h1>
+  <h1 class="container-title">Branch Locations</h1>
   <div class="map-container">
-    <agm-map [latitude]="lat" [longitude]="lng"></agm-map>
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="8">
+      <agm-marker *ngFor="let marker of locations" [latitude]="marker.lat" [longitude]="marker.lng" (markerClick)="markerClick(infoWindow)">
+        <agm-info-window #infoWindow>
+          <div class="window">
+            <h3>{{ marker.name }}</h3>
+            <p>{{ marker.street }}
+              <br> {{ marker.city }}</p>
+            <p>{{ marker.phone }}</p>
+          </div>
+        </agm-info-window>
+      </agm-marker>
+    </agm-map>
   </div>
+
+  <div class="locations-list" *ngFor="let location of locations" fxLayout="row" fxLayout.xs="column" fxLayoutGap="1%" fxLayoutGap.xs="6%"
+    fxLayoutAlign="space-around">
+    <div fxFlex="50%">
+      <h4>{{ location.name }}</h4>
+      <p>{{ location.street }}
+        <br> {{ location.city }}</p>
+    </div>
+    <div>
+      <h4>{{ location.phone }}</h4>
+      <p>ATM
+        <br> Lobby Regular Hours</p>
+    </div>
+
+  </div>
+
 
 
 </div>

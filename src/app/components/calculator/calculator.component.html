@@ -21,12 +21,19 @@
             <mat-option value="30">30</mat-option>
             <mat-option value="40">40</mat-option>
           </mat-select>
+
         </mat-form-field>
       </form>
-      <mat-list>
-        <mat-list-item>Monthly Payments: {{ this.monthlyPayment | currency:'USD':"$ ": "1.0" }}</mat-list-item>
-        <mat-list-item>Total Principal and Interest: {{ this.totalPaid | currency:'USD':"$ ": "1.0" }} </mat-list-item>
-      </mat-list>
+      <div class="results-div" fxLayout="column" fxLayout.xs="column" fxLayoutGap="1%" fxLayoutGap.xs="6%">
+        <p fxLayout="row" fxLayout.xs="column" fxLayoutGap="1%" fxLayoutGap.xs="6%" fxLayoutAlign="space-between">
+          <span>Monthly Payments:</span>
+          <span>{{ this.monthlyPayment | currency:'USD':"$ ": "1.0" }}</span>
+        </p>
+        <p fxLayout="row" fxLayout.xs="column" fxLayoutGap="1%" fxLayoutGap.xs="6%" fxLayoutAlign="space-between">
+          <span>Total Principal and Interest:</span>
+          <span>{{ this.totalPaid | currency:'USD':"$ ": "1.0" }}</span>
+        </p>
+      </div>
     </mat-tab>
     <mat-tab label="Max Loan">
       <h1 class="container-title">Max Loan Amount</h1>
@@ -50,9 +57,10 @@
           </mat-select>
         </mat-form-field>
       </form>
-      <mat-list>
-        <mat-list-item>Max amount to borrow: {{ this.maxLoan | currency:'USD':"$ ": "1.0"}}</mat-list-item>
-      </mat-list>
+      <div class="results-div" fxLayout="row" fxLayout.xs="column" fxLayoutGap="1%" fxLayoutGap.xs="6%" fxLayoutAlign="space-between">
+        <p>Max Loan: </p>
+        <p>{{ this.maxLoan | currency:'USD':"$ ": "1.0"}}</p>
+      </div>
     </mat-tab>
   </mat-tab-group>
 

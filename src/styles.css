@@ -24,3 +24,11 @@ body {
   text-align: center;
   margin-bottom: 4%;
 }
+
+mat-toolbar {
+  z-index: 10;
+}
+
+.menu-links {
+  margin-top: 12%;
+}

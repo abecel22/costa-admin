@@ -1,3 +1,27 @@
+.container {
+  z-index: 0;
+}
+
 agm-map {
-  height: 300px;
+  height: 400px;
+  z-index: 0;
+}
+
+.window {
+  width: 100%;
+  color: #16548b;
+  font-weight: 800;
+}
+
+.map-container {
+  z-index: 1;
+  margin-top: 3%;
+  border: 1px solid grey;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.locations-list {
+  padding: 0 20px 20px 20px;
+  border-bottom: 2px solid black;
+  margin-top: 5%;
 }
