@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -24,6 +25,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatDividerModule } from '@angular/material/divider';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AgmCoreModule } from '@agm/core';
 
 import { ClientsComponent } from './components/clients/clients.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -76,7 +78,10 @@ import { DashlineGraphComponent } from './components/dashboard/dashline-graph/da
     MatTabsModule,
     FlexLayoutModule,
     MatDividerModule,
-    Ng2OdometerModule.forRoot()
+    Ng2OdometerModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: environment.apiKey
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
