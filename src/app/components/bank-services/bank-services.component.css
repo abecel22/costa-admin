@@ -42,3 +42,13 @@ mat-divider {
 .service-row_item:hover {
   transform: translateY(-7px);
 }
+
+.footer {
+  text-align: center;
+  margin: 10% auto 5%;
+}
+
+a {
+  color: rgb(56, 54, 54);
+  font-size: 10px;
+}

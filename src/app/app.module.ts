@@ -23,6 +23,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatBadgeModule } from '@angular/material/badge';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AgmCoreModule } from '@agm/core';
@@ -80,6 +81,7 @@ import { BankServicesComponent } from './components/bank-services/bank-services.
     MatTabsModule,
     FlexLayoutModule,
     MatDividerModule,
+    MatBadgeModule,
     Ng2OdometerModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: environment.apiKey

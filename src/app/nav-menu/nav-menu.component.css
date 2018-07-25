@@ -23,6 +23,9 @@
 
 .icon {
   padding-left: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .icon-world {
