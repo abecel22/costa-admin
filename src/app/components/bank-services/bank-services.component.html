@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="header" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="0px">
+    <div class="header-image" fxFlex="50%" [ngStyle.xs]="{'display': 'none' }" [ngStyle.sm]="{'display': 'none' }">
+      <img class="header-img" src="./assets/images/workplace-1245776_1920.jpg" alt="">
+    </div>
+    <div class="header-text" fxFlex="50%" [ngStyle.gt-lg]="{'font-size': '1.3em', 'lineHeight': '2', 'paddingTop': '5%' }">
+      <h2>Our Services</h2>
+      <mat-divider></mat-divider>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iure aliquid quibusdam consectetur repellendus maiores
+        minima obcaecati assumenda non doloremque.</p>
+    </div>
+  </div>
+
+  <div class="services">
+    <div class="service-row" fxLayout="row" fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" fxLayoutAlign="center"
+      fxLayoutGap="4%">
+      <div class="service-row_item" [ngStyle.md]="{'padding': '4% 12%' }">
+        <img src="./assets/images/005-profits.png" alt="">
+        <h3>Title</h3>
+        <p>{{ lorem }}</p>
+      </div>
+      <div class="service-row_item" [ngStyle.md]="{'padding': '4% 12%' }">
+        <img src="./assets/images/007-presentation.png" alt="">
+        <h3>Title</h3>
+        <p>{{ lorem }}</p>
+      </div>
+      <div class="service-row_item" [ngStyle.md]="{'padding': '4% 12%' }">
+        <img src="./assets/images/009-bank.png" alt="">
+        <h3>Title</h3>
+        <p>{{ lorem }}</p>
+      </div>
+    </div>
+    <div class="service-row" fxLayout="row" fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" fxLayoutAlign="center"
+      fxLayoutGap="4%">
+      <div class="service-row_item" [ngStyle.md]="{'padding': '4% 12%' }">
+        <img src="./assets/images/001-profits-1.png" alt="">
+        <h3>Title</h3>
+        <p>{{ lorem }}</p>
+      </div>
+      <div class="service-row_item" [ngStyle.md]="{'padding': '4% 12%' }">
+        <img src="./assets/images/004-smartphone.png" alt="">
+        <h3>Title</h3>
+        <p>{{ lorem }}</p>
+      </div>
+      <div class="service-row_item" [ngStyle.md]="{'padding': '4% 12%' }">
+        <img src="./assets/images/006-handshake.png" alt="">
+        <h3>Title</h3>
+        <p>{{ lorem }}</p>
+      </div>
+    </div>
+  </div>
+</div>

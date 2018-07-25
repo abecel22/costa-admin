@@ -40,6 +40,7 @@ import { BarGraphComponent } from './components/reports/bar-graph/bar-graph.comp
 import { DoughnutGraphComponent } from './components/reports/doughnut-graph/doughnut-graph.component';
 import { PolarGraphComponent } from './components/reports/polar-graph/polar-graph.component';
 import { DashlineGraphComponent } from './components/dashboard/dashline-graph/dashline-graph.component';
+import { BankServicesComponent } from './components/bank-services/bank-services.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { DashlineGraphComponent } from './components/dashboard/dashline-graph/da
     BarGraphComponent,
     DoughnutGraphComponent,
     PolarGraphComponent,
-    DashlineGraphComponent
+    DashlineGraphComponent,
+    BankServicesComponent
   ],
   imports: [
     BrowserModule,

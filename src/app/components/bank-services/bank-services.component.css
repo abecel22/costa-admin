@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  height: 50%;
+  margin: 5% 0;
+  box-shadow: 9px 8px 41px -1px rgba(0, 0, 0, 0.22);
+}
+.header-img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  filter: opacity(0.9);
+}
+
+mat-divider {
+  background: white;
+  width: 70%;
+  margin: 0 15%;
+}
+
+.header-text {
+  color: white;
+  background: rgba(0, 188, 212, 1);
+  text-align: center;
+  line-height: 1.8;
+  padding: 0 8%;
+}
+
+.service-row {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.service-row_item {
+  background: white;
+  text-align: center;
+  padding: 4%;
+  box-shadow: 9px 8px 41px -1px rgba(0, 0, 0, 0.42);
+  transition: all 1s ease;
+}
+
+.service-row_item:hover {
+  transform: translateY(-7px);
+}
